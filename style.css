@@ -1,0 +1,306 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+*:focus {
+    outline: none;
+}
+body{
+    max-width: 65%;
+    margin: auto;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #ffffff;
+}
+#glavniNaslov{
+    text-align: center;
+    margin: 15px 0;
+    color: #323232;
+    font-size: 55px;
+}
+#podnaslov{
+    margin: 15px 0;
+    text-align: center;
+    color: #323232;
+    font-size: 25px;
+}
+.row {
+    overflow: hidden;
+}
+.ispisanaPoruka {
+    background-color: #323232;
+    padding: 10px;
+    margin: 0 auto;
+    margin-top: 10px;
+    color: #ffe600c4;
+    border: #b3ad5d solid 1px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    
+}
+
+.ispisanaPoruka2 {
+    background-color: #ffe600c4;
+    padding: 10px;
+    margin: 0 auto;
+    margin-top: 10px;
+    color: #323232;
+    border: #c2c0c0 solid 1px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    
+}
+/* Mobile*/
+@media only screen and (max-width: 829px){
+    body{
+        max-width: 95%;
+    }
+    [class*="col-m"] {
+        width: 100%;
+      }
+      ul li a {
+        margin-top: 5px;
+        margin-bottom: 5px; 
+        font-size: 15px;       
+    }
+    #element{
+        height: 150px;
+        margin: 25px 0; 
+        overflow-x: hidden;
+        overflow-y: scroll;
+    }
+    #ispis {
+        width: 100%;
+    }  
+    #ispis2 {
+        width: 100%;
+    }  
+    #slicica{
+        width: 7%;
+    }
+    .ispisanaPoruka2 {
+        width: 85%;
+    }
+    .ispisanaPoruka {
+        width: 85%;  
+    }
+}
+
+
+/* Tablet */
+@media only screen and (min-width: 830px) and (max-width: 1075px){
+    [class*="col-m-"]{
+        width: 25%;
+        float: left;
+    }
+    ul li a {
+        margin-top: 5px;
+        margin-bottom: 5px; 
+        font-size: 15px;       
+    }
+    #element{
+        height: 150px;
+        margin: 25px 0; 
+        overflow-x: hidden;
+        overflow-y: scroll;
+    }
+    #ispis {
+        width: 100%;
+    }  
+    #ispis2 {
+        width: 100%;
+    } 
+    #slicica{
+        width: 3%;
+    }
+    .ispisanaPoruka2 {
+        width: 65%;
+    }
+    .ispisanaPoruka {
+        width: 65%;  
+    }
+}
+
+/* Desktop */
+@media only screen and (min-width: 1076px){
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+
+    [class*="col-"]{
+        float: left;
+    }
+    ul li a {
+        font-size: 20px; 
+    }
+    #ispis {
+        width: 50%;
+    }  
+    #ispis2 {
+        width: 50%;
+    } 
+    #slicica{
+        width: 3%;
+    }
+    .ispisanaPoruka2 {
+        width: 55%;
+    }
+    .ispisanaPoruka {
+        width: 55%;  
+    }
+}
+
+ul li {
+    list-style-type: none;
+}
+
+ul li a {
+    background-color:#323232;
+    padding: 10px 25px;
+    text-decoration: none;
+    color: #ffe600;
+    margin-left: 5px;
+    margin-right: 5px;
+    display: block;
+    border-radius: 25px;
+    text-align: center;
+    
+}
+ul li a:hover {
+    background-color: #ffe600;
+    color: #323232;
+}
+
+
+/* btn part */
+
+.form {
+    margin: 15px 0;
+    text-align: center;
+}
+#element{
+    border: #c2c0c0 solid 2px;
+    height: 400px;
+    margin-top: 25px;
+    background-color: white;
+    border-radius: 15px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    padding: 10px;
+}
+#ispisUserName{
+    height: 50px;
+}
+.btnColor {
+    background-color: #323232;
+    width: 150px;
+    padding: 10px;
+    border: none;
+    border-radius: 25px;
+    color: #ffe600;
+    margin-top: 10px;
+    
+}
+.btnColor:hover {
+    background-color: #ffe600;
+    color: #323232;
+}
+#btnUnosPoruke{
+    vertical-align: top;
+}
+#unosPoruke, #userName, #bojaPozadine {
+    padding: 10px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: #c2c0c0 1px solid;
+    margin: 0 10px;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 15px;
+}
+#bojaPozadine{
+    outline: none;;
+}
+#ispis {
+    background-color: greenyellow;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 25px;
+    color: #323232;
+    font-family: 'Montserrat', sans-serif;
+}  
+#ispis2 {
+    background-color: rgb(255, 78, 47);
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 25px;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+}  
+#slicica{
+    display: block;
+    position: relative;
+    left: 95%;
+}
+#slicica:hover{
+    cursor: pointer;
+}
+
+ul li:active {
+    border-radius: 25px;
+    background-color: #ffe600;
+    color: #323232;
+}
+.inputPolja{
+    width: 65%;
+    height: 50px;
+}
+.datum {
+    text-align: center;
+    width: 100%;
+    border: #323232 1px solid;
+    display: inline;
+}
+.active {
+    background-color: #ffe600;
+    color: #323232;
+}
+#datumPocetni, #datumKrajnji {
+    display: inline !important;
+    width: 33%;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 15px;
+    border: #32323263 1px solid;
+    padding: 10px 5px 10px 0;
+}
+#btnFilter{
+    margin-left: 5px;
+}
+/* Scrollbar */
+
+/* width */
+::-webkit-scrollbar {
+    width: 20px;
+  }
+   /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background:#ffe600; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #323232; 
+  }
+

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat room</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,200&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <h1 id="glavniNaslov">.chat</h1>
+    <h3 id="podnaslov">select Room</h3>
+    <div class="row">
+        <ul id="navigacija">
+            <li class="col-3 col-m-3 navLi"> <a id="general" href="#" autofocus>General</a></li>
+            <li class="col-3 col-m-3 navLi"> <a id="javascript" href="#">JavaScript</a></li>
+            <li class="col-3 col-m-3 navLi"> <a id="homeworks" href="#">Homeworks</a></li>
+            <li class="col-3 col-m-3 navLi"> <a id="tests" href="#">Tests</a></li>
+        </ul>
+    </div>
+
+
+    <div id="element"></div>
+    <div id="ispisUserName"></div>
+
+    <form class="form">
+        <textarea name="" id="unosPoruke" placeholder="Your message" class="inputPolja"></textarea>
+        <input type="submit" value="Send" class="btnColor" id="btnUnosPoruke">
+    </form>
+
+    <form class="form">
+        <input type="text" placeholder="Update username" name="" id="userName" class="inputPolja">
+        <input type="submit" value="Update" class="btnColor" id="btnUserName">
+    </form>
+    <form class="form">
+        <input type="datetime-local" name="" id="datumPocetni" class="">
+        <input type="datetime-local" name="" id="datumKrajnji" class="">
+        <input type="submit" value="Filter" class="btnColor" id="btnFilter">
+    </form>
+
+    <form class="form">
+        <input type="color" name="" id="bojaPozadine" value='#ffe600' class="inputPolja">
+        <input type="submit" value="Update color" class="btnColor" id="btnPromenaBoje">
+    </form>
+
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-firestore.js"></script>
+
+
+    <script>
+        const firebaseConfig = {
+            apiKey: "AIzaSyDZn-qQJUkGHaEpGMn3cALTIanb65KMN50",
+            authDomain: "chat-project-89147.firebaseapp.com",
+            projectId: "chat-project-89147",
+            storageBucket: "chat-project-89147.appspot.com",
+            messagingSenderId: "771592249010",
+            appId: "1:771592249010:web:736efff7a90ee8ab6473ab"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        let db = firebase.firestore();
+
+    </script>
+
+    <script src="app.js" type="module"></script>
+</body>
+
+</html>
